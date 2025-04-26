@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Roamify Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="icon" href="images/logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header/Navbar (Same as index.html) -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo2.png" alt="Jadoo Travel Logo">
+
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#hotels">Hotels</a>
+                <a href="#flights">Flights</a>
+
+                <a href="signup.html" class="signup-btn">Sign up</a>
+                <select name="language" id="language">
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Form Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="auth-left">
+                <img src="images/hero-traveler2.png" alt="Travel Background">
+            </div>
+            <div class="auth-right">
+                <div class="auth-logo">
+                    <h1>Welcome Back!</h1>
+                    <p>Login to explore amazing destinations.</p>
+                </div>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <span class="error-message" id="passwordError"></span>
+
+                    </div>
+                    <button type="submit" class="auth-btn">Login </button>
+
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <div class="auth-footer">
+                        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="logo">
+                    <span>Roamify</span>
+                </div>
+                <p>Book your trip in minute, get full Control for much longer.</p>
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h3>Company</h3>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Mobile</a>
+                </div>
+                <div class="links-column">
+                    <h3>Contact</h3>
+                    <a href="#">Help/FAQ</a>
+                    <a href="#">Press</a>
+                    <a href="#">Affiliates</a>
+                </div>
+                <div class="links-column">
+                    <h3>More</h3>
+                    <a href="#">Airlinefees</a>
+                    <a href="#">Airline</a>
+                    <a href="#">Low fare tips</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>Discover our app</p>
+                <div class="app-download">
+                    <img src="images/google-play.png" alt="Google Play">
+                    <img src="images/app-store.png" alt="App Store">
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>All rights reserved@roamify.com</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
